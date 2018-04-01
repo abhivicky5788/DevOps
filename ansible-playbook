@@ -6,6 +6,7 @@
       -name:create user with shell
        user:
        name: Adam, vicky, Ricky
+       shell: /bin/bash
        group: Devops, Admin
        password: 123456
       -name:unlock passwd
