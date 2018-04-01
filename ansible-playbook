@@ -1,0 +1,14 @@
+---
+-hosts:all
+ tasks:
+      -name:install apache
+       apt: pkg= apache2 state=installed update_cache=true
+      -name:create user with shell
+       user:
+       name: Adam, vicky, Ricky
+       group: Devops, Admin
+       password: 123456
+      -name:unlock passwd
+       command: passwd -d Adam, vicky, Ricky
+      -name: expire passwd
+       command: change -d 0 Adam, vicky, Ricky
